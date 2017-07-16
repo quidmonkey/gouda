@@ -1,0 +1,11 @@
+[ignore]
+
+[include]
+.gouda/**/*.js
+
+[libs]
+
+[options]
+emoji=true
+suppress_comment= \\(.\\|\n\\)*\\$Gouda_Ignore
+[lints]
