@@ -11,7 +11,7 @@ var GOUDA_DIR = '.gouda';
 var ALLOWED_TAGS = ['arg', 'argument', 'param', 'return', 'returns'];
 
 // globals
-var fileName = args.f || args.file || '../examples/sample.js';
+var fileName = args.f || args.file || 'examples/sample.js';
 var file = fs.readFileSync(fileName, 'utf-8');
 var comments = [];
 var ast = acorn.parse(file, { onComment: comments });

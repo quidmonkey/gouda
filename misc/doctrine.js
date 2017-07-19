@@ -3,7 +3,7 @@ var fs = require('fs');
 
 var ALLOWED_TAGS = ['arg', 'argument', 'param', 'return', 'returns'];
 
-var file = fs.readFileSync('../examples/simple.js', 'utf-8');
+var file = fs.readFileSync('examples/simple.js', 'utf-8');
 
 function parseDocBlocks(file) {
   var startIndex = 0;
