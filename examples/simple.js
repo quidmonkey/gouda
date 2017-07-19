@@ -1,9 +1,10 @@
+
 /**
- * Adds two numbers
- * @param  {number} x Any number
- * @param  {number} y Any number
- * @return {number}   Sum
+ * Concat two strings
+ * @param  {Object} [foo]       Foo
+ * @param  {string} [foo.str]   Foo name
  */
-module.exports.add = function add(x, y) {
-  return x + y;
+module.exports.logTwo = function logTwo(foo) {
+  foo = foo || {};
+  console.log(foo.str || '');
 }
