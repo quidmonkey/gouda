@@ -6,8 +6,6 @@ var path = require('path');
 var coreUtils = require('./lib/core-utils');
 var typeUtils = require('./lib/type-utils');
 
-console.log('~~~ args.f', args.f);
-
 var filePath = args.f || args.file || 'examples/sample.js';
 var typedFile = typeUtils.annotateFile(filePath);
 
