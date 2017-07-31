@@ -1,7 +1,7 @@
 #!/bin/bash
 
-npm run flow
+npm run type -- $@
 # npm run ava
-npm run jest
-npm run jasmine
-npm run mocha
+npm run jest -- $@
+npm run jasmine -- $@
+npm run mocha -- $@

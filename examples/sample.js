@@ -30,7 +30,7 @@ module.exports.multiply = function multiply(x, y) {
 
 /**
  * Logs out a friendly greeting
- * @param  {object} person Person
+ * @param  {Object} person Person
  * @param  {string} person.firstName First name of the person
  * @param  {string} person.lastName  Last name of the person
  */
@@ -66,4 +66,14 @@ module.exports.addMagnitudeProperty = function addMagnitudeProperty(vec2) {
   clone.magnitude = Math.sqrt(Math.pow(vec2.x, 2) + Math.pow(vec2.y, 2));
 
   return clone;
+}
+
+/**
+ * Log an optional string
+ * @param  {Object} [foo]       Foo
+ * @param  {string} [foo.str]   Foo name
+ */
+module.exports.logOptional = function logOptional(foo) {
+  foo = foo || {};
+  console.log(foo.str || '');
 }
